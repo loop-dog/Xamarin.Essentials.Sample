@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using Xamarin.Essentials.Sample.Common;
+
+
 namespace Xamarin.Essentials.Sample.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GeocodingPage : ContentPage
     {
-        const string MapKey = "n37hNHwbVxDtuETAaRrp~w6bSc-uZ4mlbJdER3pD0gA~At5FetLJMw8X2aqpS7JJNWV96B-ARG9y-jf_xjqH7MdQjILe9v0UEZTpv2SByPoa";
-
         public GeocodingPage()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace Xamarin.Essentials.Sample.Views
                 //var address = "Microsoft Building 25 Redmond WA USA";
                 var address = EdtContents.Text;
 
-                Geocoding.MapKey = MapKey;
+                Geocoding.MapKey = ConstSetting.MapKey;
                 var locations = await Geocoding.GetLocationsAsync(address);
 
                 var ret = "";
