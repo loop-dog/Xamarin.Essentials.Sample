@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Essentials.Sample.Views.GeocodingPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblResult"
+                Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Editor x:Name="EdtContents" Text="Microsoft Building 25 Redmond WA USA"/>
+
+            <Button x:Name="BtnGetLocations" Text="GetLocations"  Clicked="BtnGetLocations_ClickedAsync"/>
+
+
+            <Editor x:Name="EdtLat" Text="47.673988"/>
+            <Editor x:Name="EdtLon" Text="-122.121513"/>
+
+            <Button x:Name="BtnGetPlacemarks" Text="GetPlacemarks" Clicked="BtnGetPlacemarks_ClickedAsync"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
