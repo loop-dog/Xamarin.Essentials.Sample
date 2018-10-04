@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Essentials.Sample.Views.MapsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblResult"
+                Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            
+            <Editor x:Name="EdtLat" Text="47.673988"/>
+            <Editor x:Name="EdtLon" Text="-122.121513"/>
+            <Editor x:Name="EdtMapsLaunchOptions1" Text="Microsoft Building 25"/>
+
+            <Button x:Name="BtnOpenWithLocation" Text="OpenWithLocation" Clicked="BtnOpenWithLocation_ClickedAsync"/>
+
+
+            
+            <Editor x:Name="EdtCountryName2" Text="United States"/>
+            <Editor x:Name="EdtAdminArea2" Text="WA"/>
+            <Editor x:Name="EdtThoroughfare2" Text="Microsoft Building 25"/>
+            <Editor x:Name="EdtLocality2" Text="Redmond"/>
+            <Editor x:Name="EdtMapsLaunchOptions2" Text="Microsoft Building 25"/>
+
+            <Button x:Name="BtnOpenWithPlacemark" Text="OpenWithPlacemark" Clicked="BtnOpenWithPlacemark_ClickedAsync"/>
+
+
+            
+            <Editor x:Name="EdtCountryName3" Text="United States"/>
+            <Editor x:Name="EdtAdminArea3" Text="WA"/>
+            <Editor x:Name="EdtThoroughfare3" Text="Microsoft Building 25"/>
+            <Editor x:Name="EdtLocality3" Text="Redmond"/>
+
+            <Button x:Name="BtnPlacemark_OpenMaps" Text="Placemark_OpenMaps" Clicked="BtnPlacemark_OpenMaps_ClickedAsync"/>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
