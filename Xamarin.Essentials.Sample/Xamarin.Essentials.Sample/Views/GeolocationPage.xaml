@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Essentials.Sample.Views.GeolocationPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblResult"
+                Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button x:Name="BtnInitDisp" Text="InitDisp" Clicked="BtnInitDisp_Clicked"/>
+
+            <Button x:Name="BtnGetLastKnownLocation" Text="GetLastKnownLocation" Clicked="BtnGetLastKnownLocation_ClickedAsync"/>
+
+            <Button x:Name="BtnGetLocation" Text="GetLocation" Clicked="BtnGetLocation_ClickedAsync"/>
+
+
+            <Editor x:Name="EdtSrcLat" Text="42.358056"/>
+            <Editor x:Name="EdtSrcLon" Text=" -71.063611"/>
+
+            <Editor x:Name="EdtDistLat" Text="37.783333"/>
+            <Editor x:Name="EdtDistLon" Text="-122.416667"/>
+
+            <Button x:Name="BtnCalculateDistance" Text="CalculateDistance" Clicked="BtnCalculateDistance_Clicked"/>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -26,7 +26,17 @@
             </x:Arguments>
         </NavigationPage>
 
-
+        <NavigationPage Title="GeolocationPage">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:GeolocationPage />
+            </x:Arguments>
+        </NavigationPage>
+        
 
         <NavigationPage Title="About">
             <NavigationPage.Icon>
