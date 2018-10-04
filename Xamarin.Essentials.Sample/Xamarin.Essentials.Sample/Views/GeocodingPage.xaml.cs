@@ -66,7 +66,7 @@ namespace Xamarin.Essentials.Sample.Views
                 Double.TryParse(EdtLat.Text, out var lat);
                 Double.TryParse(EdtLon.Text,out var lon);
 
-                Geocoding.MapKey = MapKey;
+                Geocoding.MapKey = ConstSetting.MapKey;
                 var placemarks = await Geocoding.GetPlacemarksAsync(lat, lon);
 
                 var ret = "";
