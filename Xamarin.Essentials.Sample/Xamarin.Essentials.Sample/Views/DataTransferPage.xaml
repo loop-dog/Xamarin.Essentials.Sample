@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Essentials.Sample.Views.DataTransferPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblResult"
+                Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Editor x:Name="EdtTitle1" Text="Share Text"/>
+            <Editor x:Name="EdtText" Text="ShareText"/>
+
+            <Button x:Name="BtnShareText" Text="ShareText" Clicked="BtnShareText_ClickedAsync"/>
+
+
+            
+            <Editor x:Name="EdtTitle2" Text="Share Web Link"/>
+            <Editor x:Name="EdtUri" Text="ShareUri"/>
+
+            <Button x:Name="BtnShareUri" Text="ShareUri" Clicked="BtnShareUri_ClickedAsync"/>
+
+
+
+            <Editor x:Name="EdtTitle3" Text="Share Web Link"/>
+            <Editor x:Name="EdtSubject3" Text="Share Web Link Subject"/>
+            <Editor x:Name="EdtText3" Text="ShareText"/>
+            <Editor x:Name="EdtUri3" Text="ShareUri"/>
+
+            <Button x:Name="BtnShareAllData" Text="ShareAllData" Clicked="BtnShareAllData_ClickedAsync"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
