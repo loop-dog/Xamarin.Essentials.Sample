@@ -70,6 +70,28 @@
             </x:Arguments>
         </NavigationPage>
 
+        <NavigationPage Title="GyroscopePage">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:GyroscopePage />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="MagnetometerPage">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:MagnetometerPage />
+            </x:Arguments>
+        </NavigationPage>
+
         
         <NavigationPage Title="About">
             <NavigationPage.Icon>
