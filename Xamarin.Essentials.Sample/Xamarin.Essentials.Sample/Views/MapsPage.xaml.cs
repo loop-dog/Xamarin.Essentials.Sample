@@ -35,7 +35,7 @@ namespace Xamarin.Essentials.Sample.Views
             }
             catch (Exception ex)
             {
-                // Unable to get location
+                // Unable to open screen
                 this.lblResult.Text = ex.ToString();
             }
         }
@@ -62,7 +62,7 @@ namespace Xamarin.Essentials.Sample.Views
             }
             catch (Exception ex)
             {
-                // Unable to get location
+                // Unable to open screen
                 this.lblResult.Text = ex.ToString();
             }
         }
@@ -89,7 +89,7 @@ namespace Xamarin.Essentials.Sample.Views
             }
             catch (Exception ex)
             {
-                // Unable to get location
+                // Unable to open screen
                 this.lblResult.Text = ex.ToString();
             }
 
