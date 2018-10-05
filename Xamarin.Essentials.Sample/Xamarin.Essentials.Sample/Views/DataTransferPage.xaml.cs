@@ -44,7 +44,7 @@ namespace Xamarin.Essentials.Sample.Views
             {
                 await DataTransfer.RequestAsync(new ShareTextRequest
                 {
-                    Uri = EdtUri.Text,
+                    Uri = Uri.IsWellFormedUriString(EdtUri.Text, UriKind.Absolute) ? EdtUri.Text : null,
                     Title = EdtTitle2.Text
                 });
                 
@@ -67,7 +67,7 @@ namespace Xamarin.Essentials.Sample.Views
                 {
                     Subject = EdtSubject3.Text,
                     Text = EdtText3.Text,
-                    Uri = EdtUri3.Text,
+                    Uri = Uri.IsWellFormedUriString(EdtUri3.Text, UriKind.Absolute) ? EdtUri3.Text : null,
                     Title = EdtTitle3.Text
                 });
 
