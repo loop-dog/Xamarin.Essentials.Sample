@@ -4,10 +4,6 @@
              x:Class="Xamarin.Essentials.Sample.Views.GeolocationPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="lblResult"
-                Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
 
             <Button x:Name="BtnInitDisp" Text="InitDisp" Clicked="BtnInitDisp_Clicked"/>
 
@@ -24,7 +20,13 @@
 
             <Button x:Name="BtnCalculateDistance" Text="CalculateDistance" Clicked="BtnCalculateDistance_Clicked"/>
 
-            
+            <ScrollView Orientation="Both">
+                <Label x:Name="lblResult"
+                Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </ScrollView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

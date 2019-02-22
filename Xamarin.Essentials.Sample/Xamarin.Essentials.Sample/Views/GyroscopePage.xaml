@@ -4,16 +4,17 @@
              x:Class="Xamarin.Essentials.Sample.Views.GyroscopePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="lblResult"
-                Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-
 
             <Button x:Name="BtnStart" Text="Start" Clicked="BtnStart_Clicked"/>
             <Button x:Name="BtnStop" Text="Stop" Clicked="BtnStop_Clicked"/>
             <Button x:Name="BtnClear" Text="Clear" Clicked="BtnClear_Clicked"/>
 
+            <ScrollView Orientation="Both" >
+                <Label x:Name="lblResult"
+                Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </ScrollView>
 
         </StackLayout>
     </ContentPage.Content>
