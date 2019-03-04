@@ -22,6 +22,8 @@ namespace Xamarin.Essentials.Sample.UWP
     /// </summary>
     sealed partial class App : Application
     {
+        public const string MapKey = "YOUR_KEY~";
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -30,6 +32,7 @@ namespace Xamarin.Essentials.Sample.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            Platform.MapServiceToken = MapKey;
         }
 
         /// <summary>

@@ -25,9 +25,9 @@ namespace Xamarin.Essentials.Sample.Views
                 Double.TryParse(EdtLon.Text, out var lon);
 
                 var location = new Location(lat, lon);
-                var options = new MapsLaunchOptions { Name = EdtMapsLaunchOptions1.Text };
+                var options = new MapLaunchOptions { Name = EdtMapsLaunchOptions1.Text };
 
-                await Maps.OpenAsync(location, options);
+                await Map.OpenAsync(location, options);
 
                 //ret = $"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}";
                 //Console.WriteLine(ret);
@@ -52,9 +52,9 @@ namespace Xamarin.Essentials.Sample.Views
                     Thoroughfare = EdtThoroughfare2.Text,
                     Locality = EdtLocality2.Text
                 };
-                var options = new MapsLaunchOptions { Name = EdtMapsLaunchOptions2.Text };
+                var options = new MapLaunchOptions { Name = EdtMapsLaunchOptions2.Text };
 
-                await Maps.OpenAsync(placemark, options);
+                await Map.OpenAsync(placemark, options);
 
                 //ret = $"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}";
                 //Console.WriteLine(ret);

@@ -27,7 +27,6 @@ namespace Xamarin.Essentials.Sample.Views
                 //var address = "Microsoft Building 25 Redmond WA USA";
                 var address = EdtContents.Text;
 
-                Geocoding.MapKey = ConstSetting.MapKey;
                 var locations = await Geocoding.GetLocationsAsync(address);
 
                 var ret = "";
@@ -66,7 +65,6 @@ namespace Xamarin.Essentials.Sample.Views
                 Double.TryParse(EdtLat.Text, out var lat);
                 Double.TryParse(EdtLon.Text,out var lon);
 
-                Geocoding.MapKey = ConstSetting.MapKey;
                 var placemarks = await Geocoding.GetPlacemarksAsync(lat, lon);
 
                 var ret = "";

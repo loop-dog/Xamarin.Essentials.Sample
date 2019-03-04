@@ -48,14 +48,14 @@
             </x:Arguments>
         </NavigationPage>
 
-        <NavigationPage Title="DataTransferPage">
+        <NavigationPage Title="SharePage">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_feed.png"/>
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:DataTransferPage />
+                <views:SharePage />
             </x:Arguments>
         </NavigationPage>
 

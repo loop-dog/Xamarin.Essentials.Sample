@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Xamarin.Essentials.Sample.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DataTransferPage : ContentPage
+    public partial class SharePage : ContentPage
     {
-        public DataTransferPage()
+        public SharePage()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace Xamarin.Essentials.Sample.Views
         {
             try
             {
-                await DataTransfer.RequestAsync(new ShareTextRequest
+                await Share.RequestAsync(new ShareTextRequest
                 {
                     Text = EdtText.Text,
                     Title = EdtTitle1.Text
@@ -42,7 +42,7 @@ namespace Xamarin.Essentials.Sample.Views
         {
             try
             {
-                await DataTransfer.RequestAsync(new ShareTextRequest
+                await Share.RequestAsync(new ShareTextRequest
                 {
                     Uri = Uri.IsWellFormedUriString(EdtUri.Text, UriKind.Absolute) ? EdtUri.Text : null,
                     Title = EdtTitle2.Text
@@ -63,7 +63,7 @@ namespace Xamarin.Essentials.Sample.Views
         {
             try
             {
-                await DataTransfer.RequestAsync(new ShareTextRequest
+                await Share.RequestAsync(new ShareTextRequest
                 {
                     Subject = EdtSubject3.Text,
                     Text = EdtText3.Text,
